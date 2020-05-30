@@ -29,7 +29,7 @@ public class KafkaMsgProcessor implements ApplicationListener<ApplicationReadyEv
 
     protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    @Value("${spring.kafka.bootstrap-servers:120.79.212.203:30730}")
+    @Value("${spring.kafka.bootstrap-servers:null}")
     private List<String> bootstrapServers;
     @Value("${spring.kafka.topics:test}")
     private String topic;
