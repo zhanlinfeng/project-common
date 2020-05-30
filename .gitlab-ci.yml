@@ -1,0 +1,9 @@
+stages:
+  - analyze
+sonar_analyze:
+  stage: analyze
+  script:
+    - sonar-scanner -Dsonar.projectKey=deepthink-common
+  tags:
+    - analyze
+
